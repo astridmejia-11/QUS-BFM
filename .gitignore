@@ -1,0 +1,38 @@
+# Whitelist: this folder is also DATA_ROOT (~30 GB). Ignore everything,
+# then allow code and documents only.
+/*
+!/.gitignore
+!/README.md
+!/config.m
+!/*.m
+!/src/
+!/scripts/
+!/merino/
+!/lab/
+!/tasks/
+!/results/
+
+# results: only the written reports
+/results/*
+!/results/*.md
+
+# never data or binaries, even inside allowed folders
+*.mat
+*.png
+*.svg
+*.jpg
+*.fig
+*.xlsx
+*.csv
+*.pdf
+*.avi
+*.asv
+*.mlx
+*.slxc
+slprj/
+
+# nested clone of the remote, not part of this repo
+/QUS-BFM/
+
+# local project notes, not versioned
+/CLAUDE.md
